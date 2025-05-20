@@ -1,0 +1,98 @@
+{
+  "title": "New Survey",
+  "nickname": "My Survey",
+  "language": "en",
+  "pages": [
+    {
+      "questions": [
+        {
+          "headings": [
+            {
+              "heading": "Multiple Choice with Random Assignment 1"
+            }
+          ],
+          "family": "single_choice",
+          "subtype": "vertical",
+          "answers": {
+            "choices": [
+              {
+                "text": "a",
+                "visible": true,
+                "position": 1
+              },
+              {
+                "text": "b",
+                "visible": true,
+                "position": 2
+              },
+              {
+                "text": "c",
+                "visible": true,
+                "position": 3
+              }
+            ]
+          },
+          "position": 3
+        },
+        {
+          "headings": [
+            {
+              "heading": "Multiple Choice with Random Assignment 2"
+            }
+          ],
+          "family": "single_choice",
+          "subtype": "vertical",
+          "answers": {
+            "choices": [
+              {
+                "text": "a",
+                "visible": true,
+                "position": 1
+              },
+              {
+                "text": "b",
+                "visible": true,
+                "position": 2
+              },
+              {
+                "text": "c",
+                "visible": true,
+                "position": 3
+              }
+            ]
+          },
+          "position": 3
+        },
+        {
+          "headings": [
+            {
+              "heading": "Multiple Choice with Random Assignment 3"
+            }
+          ],
+          "family": "single_choice",
+          "subtype": "vertical",
+          "answers": {
+            "choices": [
+              {
+                "text": "a",
+                "visible": true,
+                "position": 1
+              },
+              {
+                "text": "b",
+                "visible": true,
+                "position": 2
+              },
+              {
+                "text": "c",
+                "visible": true,
+                "position": 3
+              }
+            ]
+          },
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

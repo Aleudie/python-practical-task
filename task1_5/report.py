@@ -13,11 +13,12 @@ for specifying resources.
 import argparse
 import platform
 import getpass
-import cpuinfo
 import socket
+import os
+
+import cpuinfo
 import distro
 import psutil
-import os
 
 parser = argparse.ArgumentParser(description='Get system information')
 parser.add_argument('-d', '--distro', action='store_true', help='Get distro information')

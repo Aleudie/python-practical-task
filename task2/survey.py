@@ -1,5 +1,10 @@
 """
-Task 2. Create a survey using SurveyMonkey API
+Task 2. This script: 
+- Creates a survey 
+- Creates a collector for the survey
+- Creates a message for the collector
+- Adds recipients for the message
+    - Each recipient its taken from a text file with a list of email addresses
 """
 
 #!/usr/bin/env python
@@ -52,3 +57,22 @@ data = res.read()
 # Print preview link of the survey
 response_json = json.loads(data.decode("utf-8"))
 print(response_json.get("preview"))
+
+# Creates a collector for the survey
+conn.request("POST", "/v3/surveys/" + response_json.get("id") + "/collectors", '{"type": "email"}', headers)
+res = conn.getresponse()
+data = res.read()
+response_json = json.loads(data.decode("utf-8"))
+print("Status:", res.status)
+print(response_json)
+
+# Creates a message for the collector
+with open("message_example.json", "r") as f:
+    payload = f.read()
+
+conn.request("POST", "/v3/collectors/" + response_json.get("id") + "/messages", payload, headers)
+res = conn.getresponse()
+data = res.read()
+response_json = json.loads(data.decode("utf-8"))
+print("Status:", res.status)
+print(response_json)

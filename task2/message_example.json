@@ -1,0 +1,6 @@
+{
+  "type": "invite",
+  "subject": "Please help me by taking my survey",
+  "body_text": "Thank you in advance for taking my survey. [SurveyLink], [OptOutLink], [PrivacyLink], [FooterLink]",
+  "is_branding_enabled": true
+}

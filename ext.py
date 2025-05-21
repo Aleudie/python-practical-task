@@ -1,11 +1,11 @@
+"""
+Create a script that accepts the file name and puts its extension to output. 
+If there is no extension - an exception should be raised.
+"""
+
 #!/usr/bin/env python3
 
-import sys
 import argparse
-
-"""
-Create a script that accepts the file name and puts its extension to output. If there is no extension - an exception should be raised.
-"""
 
 parser = argparse.ArgumentParser(description='Accepts a file name and outputs its extension')
 parser.add_argument('filename', help='Any file name, including extension')
